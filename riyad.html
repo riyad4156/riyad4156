@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIYAD</title>
+    <link rel="stylesheet" href="/riyad.css">
+</head>
+<body>
+    <h1>This website created by riyad hossin <br>
+        date:5/12/2024
+    </h1>
+    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+        <div class="h1">
+         
+        </div>
+        <input type="hidden" name="access_key" value="5c1bbbda-0b30-483e-a823-ad0935f0f9c4">
+        <div class="contain">
+         <div class="name">
+           <input type="text" name="name" placeholder="Name ">
+         </div>
+         <div class="email" >
+           <input type="text" name="email" placeholder="Email ">
+         </div>
+         <div class="comment">
+           <input type="text" name="comment" placeholder="Comment ">
+         </div>
+       
+         <div class="submit">
+           <input class="submitbtn" type="submit" value="Send" >
+         </div>
+         </div>
+     </form>
+     <script>
+       document.addEventListener("DOMContentLoaded", function() {
+         const image = document.getElementById("preview");
+         const input = document.getElementById("fileInput");
+         const button = document.getElementById("submit")
+         
+         input.addEventListener("change", function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    image.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+         });
+         });
+     </script>
+</body>
+</html>
