@@ -1,0 +1,58 @@
+video{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+
+  .stopwatch {
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+     
+  }
+  .display {
+    font-size: 150px;
+    padding: 20px;
+    margin: 0 auto;
+    color: orange;
+  }
+  a{
+    text-decoration: none;
+  }
+  @media only screen and (max-width: 600px){
+    .display {
+      font-size: 100px;
+      padding: 0 auto;
+      margin: 0 auto;
+    }
+  }  @media  (max-width: 200px) {
+    .display {
+      font-size: 0px;
+      
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .display {
+      font-size: 50px;
+      padding: 0 auto;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .display {
+      font-size: 100px;
+      padding: 0 auto;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .display {
+      font-size: 150px;
+      padding: 0 auto;
+      margin: 0 auto;
+    }
+  }
